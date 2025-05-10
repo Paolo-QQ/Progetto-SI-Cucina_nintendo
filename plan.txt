@@ -1,3 +1,4 @@
+(move table storage)
 (take_ingredient chicken storage)
 (move storage counter)
 (take_tool knife counter)
