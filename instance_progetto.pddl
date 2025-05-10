@@ -6,14 +6,14 @@
     knife pan -tool 
     counter stove sink storage table -location
     Mario -chef
-    chicken salmon potato carrot rice feta tomato zucchini asparagus peas beans black_rice tuna avocado olives  -ingredient
+    chicken salmon potato carrot rice feta tomato  beans tuna avocado  -ingredient
 )
  
 (:init  
-(chef_location Mario storage)
+(chef_location Mario table)
 (free stove)
 (free sink)
-(free table)
+(free storage)
 (free counter)
 
 (ingredient_location chicken storage)(ingredient_location salmon storage)(ingredient_location potato storage)
@@ -35,8 +35,8 @@
 )
 
 (:goal (and
-(served chicken)(served salmon);;(served rice)(served tuna)(served beans)(served avocado)(served carrot)
-;;(served feta)
+(served chicken)(served salmon)(served rice)(served tuna)(served beans)(served avocado)(served carrot)
+(served feta)
   
   
 

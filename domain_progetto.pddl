@@ -150,6 +150,7 @@
     (ingredient_location ?z ?y)
     (not(ing_held ?z))
     (not(is_holding_ingredient ?x))
+    (not(served ?z))
     )
     :effect (and 
     (ing_held ?z)
@@ -167,6 +168,7 @@
     (ing_held ?z)
     (ing_holding ?x ?z)
     (is_holding_ingredient ?x)
+    (not(served ?z))
     )
     :effect (and 
     (not(ing_held ?z))
@@ -184,6 +186,7 @@
     (not(needs_cooking ?y))
     (is_holding_ingredient ?x)
     (chef_location ?x table)
+    (not(served ?y))
     )
     :effect (and 
     (served ?y )
